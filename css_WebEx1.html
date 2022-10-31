@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>WebEx1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+KR:wght@300&family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: block;
+      margin:0;
+      
+    }
+
+    body {
+      margin : 20px auto;
+      
+      background: url(./images2/nicholas-andy-wood.jpg) no-repeat 100% /cover ;
+      background-attachment: fixed;
+      font-family: 'Noto Sans KR', 돋움, sans-serif;
+    }
+    h1, h2, h3, ul, li, a, p {
+      margin:0;
+      padding:0;
+    }
+    .wrapper {
+      border : #eeb0b0 solid 3px;
+      margin: 20px auto;
+      width:948px; height:815px;
+      background-color: #f1eee9;
+      position:relative;
+    }
+
+    header {
+      height:120px;
+      color :#fff;
+      text-align: left;
+      padding: 20px 0 0 20px;
+      background-color:#7d1e6a;
+    }
+
+    header a {
+      display: block;
+      width: 100px; height: 100px;
+      float:left;
+
+      background-image: url(./images2/Leica_Camera.svg.png);
+      background-size: cover;
+      
+    }
+    header a img {
+      display: block;
+      width:100px; height: 100px;
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive, 돋움, sans-serif;
+      width:700px;
+      float:left;
+      margin-left:20px;
+      font-weight: normal;
+    }
+
+    header h2 {
+      font-family: 'Abril Fatface', cursive;
+      float:left;
+      margin-left:20px;
+      font-size: 28px;
+      vertical-align: top;
+      letter-spacing: 2px;
+    }
+
+    #gnb {
+      list-style: none;
+      padding-left:none;
+      background-color: #ffcd38;
+
+    }
+
+    #gnb li {
+      float: left;
+      padding-left:none;
+    }
+
+    #gnb li a{
+      text-align: center;
+      display: block;
+      text-decoration: none;
+      color:darkorchid;
+      font-weight: bold;
+      width:100px; height:34px;
+      line-height: 34px;
+    }
+
+   h3 {
+    font-size: 22px;
+    
+   }
+
+    .wrapper article { /*656px;*/
+      display: inline-block;
+      margin:0;
+      width: 647px;
+      background-color: #f1eee9;
+      padding:30px 0 40px 20px;
+    }
+
+    .wrapper article img {
+      display: block;
+      margin:0;
+      width: 302px; height: 226px;
+      border : 1px red solid;
+      float:left;
+    }
+
+    .wrapper article .txt {
+      margin:0;
+      width: 270px;
+      float:left;
+      text-align: left;
+      padding : 0 0 0 20px;
+    }
+
+    .wrapper aside { /*282px*/
+      display: inline-block;
+      margin:0;
+      width: 280px;
+      font-size: 20px;
+      font-weight: bold;
+      border-left:red 1px solid;
+      background-color: #fff;
+      text-align: left;
+      position:absolute;
+      top:174px;
+    }
+    .wrapper aside h3{ 
+      width: 260px;
+      margin:30px 0; 
+      padding-left:20px;
+    }
+    .wrapper aside #side{
+      list-style-type: none;
+    }
+
+    .wrapper aside #side a{
+      display: block;
+      width: 260px; height: 52px;
+      line-height: 52px;
+      text-decoration: none;
+      border-bottom:red 1px solid;
+      
+      color : #000;
+      padding-left:20px; margin:0;
+    }
+    h3 {
+      margin-bottom: 20px;
+    }
+    p{
+      margin-top: 20px;
+    }
+
+    .wrapper .contact {
+      width: 236px; height:243px;
+      padding: 30px 22px;
+      background-color: #fff;
+      border-left: red 1px solid;
+      font-size: 20px;
+      font-weight: bold;
+      position: absolute;
+      right:0; bottom:34px;
+    }
+    footer {
+      color:#fff;
+      width: 928px;
+      height: 34px;
+      line-height: 34px;
+      background-color: #7d1e6a;
+      padding-left: 20px;
+      position:absolute;
+      bottom:0;
+    }
+   aside h3, .contact h3, article strong {
+    color:red;
+    font-weight: bold;
+   }
+
+   nav a:hover, aside a:hover {
+    background-color: lavender;
+   }
+
+  </style>
+</head>
+<body>
+  <!-- <img src="./images2/Leica_Camera.svg.png" alt="로고"> -->
+<div class="wrapper">
+<header class="clearfix">  
+  <a href="https://www.leica-store.co.kr/"></a>
+  <h1>Kim's Kitchen</h1>
+  <h2>Cooking Class</h2>
+</header>
+
+<nav>
+  <ul id="gnb" class="clearfix">
+    <li><a href="#">홈</a></li>
+    <li><a href="#">소개</a></li>
+    <li><a href="#">교실</a></li>
+    <li><a href="#">케이터링</a></li>
+    <li><a href="#">연락처</a></li>
+  </ul>
+</nav>
+
+
+  <article>
+    <img src="./images2/bgEx2.jpg" alt="메뉴1">
+    <div class="txt">
+    <h3>채식주의자</h3>
+    <strong>런던에서의5주코스</strong>
+    <p>5주간 채식주의자 음식에 대해 소개하고 쌀과 국수요리를 가르친다.</p>
+  </div>
+  </article>
+
+
+
+  <article>
+    <img src="./images2/txt_img03.jpg" alt="메뉴1">
+  <div class="txt txt1">
+    <h3>소스 마스터클래스</h3>
+    <strong>1일 워크샵</strong>
+    <p>1일 집중 코스에서는 다양한 요리에서 사용할 수 있는 가장 맛있는 소스를 만드는 방법을 살펴본다. </p>
+  </div>
+  </article>
+
+  <aside>
+    <h3>인기요리법</h3>
+    <ul id="side">
+      <li><a href="#">후라이드</a></li>
+      <li><a href="#">고추바사삭</a></li>
+      <li><a href="#">양념치킨</a></li>
+      <li><a href="#">강정</a></li>
+    </ul>
+  </aside>
+
+  <div class="contact">
+  <h3>연락처</h3>
+  <p>경기 수원시 팔달구 매산동</p>
+  </div>
+  <footer>
+    ⓒKim's Kitchen 김씨네 키친
+  </footer>
+</div>
+</body>
+</html>
